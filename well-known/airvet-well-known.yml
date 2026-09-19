@@ -1,0 +1,259 @@
+generated: '2026-09-19'
+method: probed
+source: live GET of /.well-known/* on every host the record knows (registrable domain + www, parent portal, member
+  portal, HubSpot marketing hosts, app redirect host); no API baseURL, OpenAPI servers[] or MCP host exists for
+  this provider
+note: No /.well-known/ document is served on any Airvet host. airvet.com and www.airvet.com answer every path with
+  HTTP 429 from a Vercel Security Checkpoint bot challenge (an HTML shell, treated as a miss); web/portal/my/go/learn/app
+  hosts answer 404. No WellKnown or SecurityTxt pointer is emitted because nothing was served.
+hosts:
+- host: airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/agent.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+- host: www.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/openid-configuration
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/oauth-authorization-server
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/oauth-protected-resource
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/api-catalog
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/ai-plugin.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/agent-card.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/agent.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+  - path: /.well-known/aauth-resource.json
+    status: 429
+    file: null
+    note: 'Vercel Security Checkpoint (x-vercel-mitigated: challenge) HTML shell, not a document'
+- host: web.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: portal.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: my.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: go.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: learn.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: app.airvet.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null

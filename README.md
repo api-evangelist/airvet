@@ -64,5 +64,11 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Airvet is a company surfaced via the API Evangelist harvest backlog (source: secondary-market; backed by starting-line-vc) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/airvet
+Airvet is a Los Angeles-based pet telehealth company, founded in 2018, that connects pet parents with licensed veterinarians 24/7 by video and chat through its Airvet for Pet Parents app and a companion Airvet Doctor app for its nationwide vet network. It sells the service as an employer-sponsored benefit ("Vetcare as a Benefit") and as a direct annual consumer membership. Airvet is a consumer/B2B2C telehealth product, not an API platform: as of this profile it publishes no developer portal, API documentation, SDKs, webhooks or machine-readable API contract, and its GitHub organization has no public repositories. airvet.com sits behind a Vercel Security Checkpoint that answers automated requests with HTTP 429.
+
+- Website: https://www.airvet.com/
+- Blog: https://www.airvet.com/blog
+- Help center: https://airvet.zendesk.com/hc/en-us
+- GitHub: https://github.com/airvet
+- Privacy policy: https://airvet.com/privacy
+- Pet parent terms: https://airvet.com/pet-parents-terms-of-service

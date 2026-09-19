@@ -1,0 +1,24 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: web search + live probes of airvet.com, go.airvet.com, airvet.zendesk.com and the App Store listing
+note: >-
+  No regulatory-posture signal could be VERIFIED on a public surface. airvet.com (and www.) answers every
+  path - including /privacy, /ccpa, /do-not-sell-my-personal-information, /accessibility, /legal/subprocessors,
+  /security - with HTTP 429 from a Vercel Security Checkpoint bot challenge, so page substance could not be
+  read. Leads that exist but were not verifiable this run: a privacy policy dated January 1, 2026 at
+  https://airvet.com/privacy, a CCPA page at https://www.airvet.com/ccpa and a "Do Not Sell My Personal
+  Information" page at https://www.airvet.com/do-not-sell-my-personal-information (both linked from the
+  HubSpot-hosted go.airvet.com footer). Per the harvest-only rule none is recorded as a signal until its
+  substance is read; nothing about accessibility, subprocessors, SBOM, data residency, incident SLA,
+  age assurance or transparency reporting was found on any reachable host.
+signals: {}
+leads:
+- signal: data_subject_request
+  url: https://www.airvet.com/do-not-sell-my-personal-information
+  status: 429
+  reason: bot-challenge; substance not read
+- signal: data_subject_request
+  url: https://www.airvet.com/ccpa
+  status: 429
+  reason: bot-challenge; substance not read
